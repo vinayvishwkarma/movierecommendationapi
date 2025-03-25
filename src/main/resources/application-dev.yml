@@ -1,0 +1,44 @@
+server:
+  servlet:
+    context-path: /mra
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS mra
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 10
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update  # Use 'none' if Flyway is managing schema
+    show-sql: false
+
+  flyway:
+    enabled: false  # Set to 'true' only if you are using Flyway migrations
+
+  springdoc:
+    swagger-ui:
+      enabled: true
+      path: /swagger-ui.html
+    api-docs:
+      path: /v3/api-docs
+
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+
+  logging:
+    level:
+      root: INFO  # Default log level for the entire app
+      com.movies.movierecommendation: DEBUG  # Set DEBUG for specific package
+      org.springframework: WARN  # Set WARN level for Spring internals
+      org.hibernate: ERROR  # Set ERROR level for Hibernate specific logs
+    file:
+      name: logs/application.log
