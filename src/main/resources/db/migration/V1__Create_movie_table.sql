@@ -1,0 +1,7 @@
+CREATE TABLE movie (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    genre VARCHAR(50) NOT NULL,
+    rating DOUBLE NOT NULL
+);
+

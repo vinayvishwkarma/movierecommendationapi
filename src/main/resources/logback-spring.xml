@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+  <!-- Define the pattern for logs -->
+  <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} - %msg%n"/>
+
+  <!-- Define log level for different packages -->
+  <logger name="org.springframework" level="INFO"/>
+  <logger name="com.movies" level="DEBUG"/>
+
+  <!-- Console Appender - Logs to the console -->
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${LOG_PATTERN}</pattern>
+    </encoder>
+  </appender>
+
+  <!-- File Appender - Logs to a file -->
+  <appender name="File" class="ch.qos.logback.core.FileAppender">
+    <file>logs/app.log</file>
+    <encoder>
+      <pattern>${LOG_PATTERN}</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Root Logger - Defines the log level for the whole application -->
+  <root level="INFO">
+    <appender-ref ref="Console"/>
+    <appender-ref ref="File"/>
+  </root>
+
+</configuration>
