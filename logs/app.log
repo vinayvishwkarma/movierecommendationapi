@@ -3994,3 +3994,55 @@ java.nio.channels.AsynchronousCloseException: null
 
 2025-05-03 01:42:08 - Init duration for springdoc-openapi is: 162 ms
 2025-05-03 01:46:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03 18:01:50 - HV000001: Hibernate Validator 8.0.2.Final
+2025-05-03 18:01:50 - Starting MovieControllerIT using Java 24 with PID 68271 (started by jarvis in /Users/jarvis/Downloads/movierecommendation)
+2025-05-03 18:01:50 - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-03 18:01:50 - The following 1 profile is active: "dev"
+2025-05-03 18:01:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03 18:01:51 - Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-05-03 18:01:51 - Tomcat initialized with port 0 (http)
+2025-05-03 18:01:51 - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-05-03 18:01:51 - Starting service [Tomcat]
+2025-05-03 18:01:51 - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-03 18:01:51 - Initializing Spring embedded WebApplicationContext
+2025-05-03 18:01:51 - Root WebApplicationContext: initialization completed in 775 ms
+2025-05-03 18:01:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03 18:01:51 - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-03 18:01:51 - HHH000026: Second-level cache disabled
+2025-05-03 18:01:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03 18:01:51 - HikariPool-1 - Starting...
+2025-05-03 18:01:52 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-05-03 18:01:52 - HikariPool-1 - Start completed.
+2025-05-03 18:01:52 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-03 18:01:52 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03 18:01:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03 18:01:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03 18:01:52 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-03 18:01:53 - Filter 'apiKeyFilter' configured for use
+2025-05-03 18:01:53 - API Key saved to file: /Users/jarvis/Downloads/movierecommendation/src/main/resources/apiKey.txt
+2025-05-03 18:01:53 - Movie table initialized with 57 movies.
+2025-05-03 18:01:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03 18:01:53 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-03 18:01:53 - Filter 'apiKeyFilter' configured for use
+2025-05-03 18:01:53 - Initializing Spring TestDispatcherServlet ''
+2025-05-03 18:01:53 - Initializing Servlet ''
+2025-05-03 18:01:53 - Completed initialization in 0 ms
+2025-05-03 18:01:53 - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-05-03 18:01:53 - Tomcat started on port 49339 (http) with context path '/mra'
+2025-05-03 18:01:53 - Started MovieControllerIT in 3.183 seconds (process running for 4.172)
+2025-05-03 18:01:54 - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-05-03 18:01:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03 18:01:56 - Graceful shutdown complete
+2025-05-03 18:01:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03 18:01:56 - HikariPool-1 - Shutdown initiated...
+2025-05-03 18:01:56 - HikariPool-1 - Shutdown completed.
